@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reset the password</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body class="bg-red-100 flex items-center justify-center min-h-screen">
+    <div class="w-full max-w-md bg-white p-6 rounded-lg shadow-md">
+      <h1 class="text-2xl font-bold text-center mb-6 text-red-600">
+        Reset the password
+      </h1>
+      <form id="forgot-form" class="space-y-4">
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700"
+            >Email</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email ID"
+            required
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
+          />
+        </div>
+        <div>
+          <button
+            type="submit"
+            class="w-full bg-red-600 text-white py-2 px-4 rounded-lg hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500"
+          >
+            Send mail to reset
+          </button>
+        </div>
+      </form>
+      <div class="text-center mt-4">
+        <p class="text-sm text-gray-600">
+          Remember the password?
+          <a href="/auth/logIn.html" class="text-red-600 hover:text-red-700">
+            Login here
+          </a>
+        </p>
+      </div>
+    </div>
+  </body>
+  <script defer src="/js/forgotPass.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</html>

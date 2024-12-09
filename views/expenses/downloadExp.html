@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Download Expenses</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body
+    class="bg-emerald-100 min-h-screen flex items-center justify-center p-4"
+  >
+    <div
+      class="max-w-4xl w-full bg-white shadow-md rounded-lg p-6"
+      id="download-table"
+    >
+      <h1 class="text-4xl font-bold text-emerald-600 mb-8 text-center">
+        Day to Day Expenses
+      </h1>
+      <h1 class="text-3xl font-bold text-center text-emerald-800 mb-6">2024</h1>
+      <h2 class="text-xl font-semibold text-emerald-700 mb-4">November 2024</h2>
+      <div class="overflow-x-auto">
+        <table class="min-w-full border-collapse border border-emerald-300">
+          <thead>
+            <tr class="bg-emerald-200">
+              <th
+                class="border border-emerald-300 px-4 py-2 text-left text-sm font-semibold text-emerald-700"
+              >
+                Created
+              </th>
+              <th
+                class="border border-emerald-300 px-4 py-2 text-left text-sm font-semibold text-emerald-700"
+              >
+                Description
+              </th>
+              <th
+                class="border border-emerald-300 px-4 py-2 text-left text-sm font-semibold text-emerald-700"
+              >
+                Category
+              </th>
+              <th
+                class="border border-emerald-300 px-4 py-2 text-right text-sm font-semibold text-emerald-700"
+              >
+                Expense Amount
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="hover:bg-emerald-50">
+              <td
+                class="border border-emerald-300 px-4 py-2 text-sm text-emerald-600"
+              >
+                2024-11-01
+              </td>
+              <td
+                class="border border-emerald-300 px-4 py-2 text-sm text-emerald-600"
+              >
+                Lunch
+              </td>
+              <td
+                class="border border-emerald-300 px-4 py-2 text-sm text-emerald-600"
+              >
+                Food
+              </td>
+              <td
+                class="border border-emerald-300 px-4 py-2 text-right text-sm text-emerald-600"
+              >
+                ₹250.00
+              </td>
+            </tr>
+            <tr class="hover:bg-emerald-50">
+              <td
+                class="border border-emerald-300 px-4 py-2 text-sm text-emerald-600"
+              >
+                2024-11-02
+              </td>
+              <td
+                class="border border-emerald-300 px-4 py-2 text-sm text-emerald-600"
+              >
+                Petrol
+              </td>
+              <td
+                class="border border-emerald-300 px-4 py-2 text-sm text-emerald-600"
+              >
+                Fuel
+              </td>
+              <td
+                class="border border-emerald-300 px-4 py-2 text-right text-sm text-emerald-600"
+              >
+                ₹500.00
+              </td>
+            </tr>
+            <tr class="hover:bg-emerald-50">
+              <td
+                class="border border-emerald-300 px-4 py-2 text-sm text-emerald-600"
+              >
+                2024-11-03
+              </td>
+              <td
+                class="border border-emerald-300 px-4 py-2 text-sm text-emerald-600"
+              >
+                Mobile phone
+              </td>
+              <td
+                class="border border-emerald-300 px-4 py-2 text-sm text-emerald-600"
+              >
+                EMI
+              </td>
+              <td
+                class="border border-emerald-300 px-4 py-2 text-right text-sm text-emerald-600"
+              >
+                ₹6000.00
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr class="bg-emerald-200">
+              <td
+                colspan="3"
+                class="border border-emerald-300 px-4 py-2 text-right text-sm font-semibold text-emerald-700"
+              >
+                Total Expense
+              </td>
+              <td
+                class="border border-emerald-300 px-4 py-2 text-right text-sm font-semibold text-emerald-700"
+              >
+                ₹6750.00
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <h2 class="text-xl font-semibold text-emerald-700 mb-4">First Week</h2>
+      <div class="overflow-x-auto">
+        <table class="min-w-full border-collapse border border-emerald-300">
+          <thead>
+            <tr class="bg-emerald-200">
+              <th
+                class="border border-emerald-300 px-4 py-2 text-left text-sm font-semibold text-emerald-700"
+              >
+                Created
+              </th>
+              <th
+                class="border border-emerald-300 px-4 py-2 text-left text-sm font-semibold text-emerald-700"
+              >
+                Description
+              </th>
+              <th
+                class="border border-emerald-300 px-4 py-2 text-left text-sm font-semibold text-emerald-700"
+              >
+                Category
+              </th>
+              <th
+                class="border border-emerald-300 px-4 py-2 text-right text-sm font-semibold text-emerald-700"
+              >
+                Expense Amount
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="hover:bg-emerald-50">
+              <td
+                class="border border-emerald-300 px-4 py-2 text-sm text-emerald-600"
+              >
+                2024-11-01
+              </td>
+              <td
+                class="border border-emerald-300 px-4 py-2 text-sm text-emerald-600"
+              >
+                Lunch
+              </td>
+              <td
+                class="border border-emerald-300 px-4 py-2 text-sm text-emerald-600"
+              >
+                Food
+              </td>
+              <td
+                class="border border-emerald-300 px-4 py-2 text-right text-sm text-emerald-600"
+              >
+                ₹250.00
+              </td>
+            </tr>
+            <tr class="hover:bg-emerald-50">
+              <td
+                class="border border-emerald-300 px-4 py-2 text-sm text-emerald-600"
+              >
+                2024-11-02
+              </td>
+              <td
+                class="border border-emerald-300 px-4 py-2 text-sm text-emerald-600"
+              >
+                Petrol
+              </td>
+              <td
+                class="border border-emerald-300 px-4 py-2 text-sm text-emerald-600"
+              >
+                Fuel
+              </td>
+              <td
+                class="border border-emerald-300 px-4 py-2 text-right text-sm text-emerald-600"
+              >
+                ₹500.00
+              </td>
+            </tr>
+            <tr class="hover:bg-emerald-50">
+              <td
+                class="border border-emerald-300 px-4 py-2 text-sm text-emerald-600"
+              >
+                2024-11-03
+              </td>
+              <td
+                class="border border-emerald-300 px-4 py-2 text-sm text-emerald-600"
+              >
+                Mobile phone
+              </td>
+              <td
+                class="border border-emerald-300 px-4 py-2 text-sm text-emerald-600"
+              >
+                EMI
+              </td>
+              <td
+                class="border border-emerald-300 px-4 py-2 text-right text-sm text-emerald-600"
+              >
+                ₹6000.00
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr class="bg-emerald-200">
+              <td
+                colspan="3"
+                class="border border-emerald-300 px-4 py-2 text-right text-sm font-semibold text-emerald-700"
+              >
+                Total Expense
+              </td>
+              <td
+                class="border border-emerald-300 px-4 py-2 text-right text-sm font-semibold text-emerald-700"
+              >
+                ₹6750.00
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <h2 class="text-xl font-semibold text-emerald-700 mb-4">2024-11-01</h2>
+      <div class="overflow-x-auto">
+        <table class="min-w-full border-collapse border border-emerald-300">
+          <thead>
+            <tr class="bg-emerald-200">
+              <th
+                class="border border-emerald-300 px-4 py-2 text-left text-sm font-semibold text-emerald-700"
+              >
+                Created
+              </th>
+              <th
+                class="border border-emerald-300 px-4 py-2 text-left text-sm font-semibold text-emerald-700"
+              >
+                Description
+              </th>
+              <th
+                class="border border-emerald-300 px-4 py-2 text-left text-sm font-semibold text-emerald-700"
+              >
+                Category
+              </th>
+              <th
+                class="border border-emerald-300 px-4 py-2 text-right text-sm font-semibold text-emerald-700"
+              >
+                Expense Amount
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="hover:bg-emerald-50">
+              <td
+                class="border border-emerald-300 px-4 py-2 text-sm text-emerald-600"
+              >
+                2024-11-01
+              </td>
+              <td
+                class="border border-emerald-300 px-4 py-2 text-sm text-emerald-600"
+              >
+                Lunch
+              </td>
+              <td
+                class="border border-emerald-300 px-4 py-2 text-sm text-emerald-600"
+              >
+                Food
+              </td>
+              <td
+                class="border border-emerald-300 px-4 py-2 text-right text-sm text-emerald-600"
+              >
+                ₹250.00
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr class="bg-emerald-200">
+              <td
+                colspan="3"
+                class="border border-emerald-300 px-4 py-2 text-right text-sm font-semibold text-emerald-700"
+              >
+                Total Expense
+              </td>
+              <td
+                class="border border-emerald-300 px-4 py-2 text-right text-sm font-semibold text-emerald-700"
+              >
+                ₹250.00
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <h2 class="text-xl font-semibold text-emerald-700 mb-4">2024-11-02</h2>
+      <div class="overflow-x-auto">
+        <table class="min-w-full border-collapse border border-emerald-300">
+          <thead>
+            <tr class="bg-emerald-200">
+              <th
+                class="border border-emerald-300 px-4 py-2 text-left text-sm font-semibold text-emerald-700"
+              >
+                Created
+              </th>
+              <th
+                class="border border-emerald-300 px-4 py-2 text-left text-sm font-semibold text-emerald-700"
+              >
+                Description
+              </th>
+              <th
+                class="border border-emerald-300 px-4 py-2 text-left text-sm font-semibold text-emerald-700"
+              >
+                Category
+              </th>
+              <th
+                class="border border-emerald-300 px-4 py-2 text-right text-sm font-semibold text-emerald-700"
+              >
+                Expense Amount
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="hover:bg-emerald-50">
+              <td
+                class="border border-emerald-300 px-4 py-2 text-sm text-emerald-600"
+              >
+                2024-11-02
+              </td>
+              <td
+                class="border border-emerald-300 px-4 py-2 text-sm text-emerald-600"
+              >
+                Petrol
+              </td>
+              <td
+                class="border border-emerald-300 px-4 py-2 text-sm text-emerald-600"
+              >
+                Fuel
+              </td>
+              <td
+                class="border border-emerald-300 px-4 py-2 text-right text-sm text-emerald-600"
+              >
+                ₹500.00
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr class="bg-emerald-200">
+              <td
+                colspan="3"
+                class="border border-emerald-300 px-4 py-2 text-right text-sm font-semibold text-emerald-700"
+              >
+                Total Expense
+              </td>
+              <td
+                class="border border-emerald-300 px-4 py-2 text-right text-sm font-semibold text-emerald-700"
+              >
+                ₹500.00
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <h2 class="text-xl font-semibold text-emerald-700 mb-4">2024-11-03</h2>
+      <div class="overflow-x-auto">
+        <table class="min-w-full border-collapse border border-emerald-300">
+          <thead>
+            <tr class="bg-emerald-200">
+              <th
+                class="border border-emerald-300 px-4 py-2 text-left text-sm font-semibold text-emerald-700"
+              >
+                Created
+              </th>
+              <th
+                class="border border-emerald-300 px-4 py-2 text-left text-sm font-semibold text-emerald-700"
+              >
+                Description
+              </th>
+              <th
+                class="border border-emerald-300 px-4 py-2 text-left text-sm font-semibold text-emerald-700"
+              >
+                Category
+              </th>
+              <th
+                class="border border-emerald-300 px-4 py-2 text-right text-sm font-semibold text-emerald-700"
+              >
+                Expense Amount
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="hover:bg-emerald-50">
+              <td
+                class="border border-emerald-300 px-4 py-2 text-sm text-emerald-600"
+              >
+                2024-11-03
+              </td>
+              <td
+                class="border border-emerald-300 px-4 py-2 text-sm text-emerald-600"
+              >
+                Mobile phone
+              </td>
+              <td
+                class="border border-emerald-300 px-4 py-2 text-sm text-emerald-600"
+              >
+                EMI
+              </td>
+              <td
+                class="border border-emerald-300 px-4 py-2 text-right text-sm text-emerald-600"
+              >
+                ₹6000.00
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr class="bg-emerald-200">
+              <td
+                colspan="3"
+                class="border border-emerald-300 px-4 py-2 text-right text-sm font-semibold text-emerald-700"
+              >
+                Total Expense
+              </td>
+              <td
+                class="border border-emerald-300 px-4 py-2 text-right text-sm font-semibold text-emerald-700"
+              >
+                ₹6000.00
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <div class="mt-6 flex justify-center">
+        <button
+          class="bg-emerald-600 text-white px-6 py-2 rounded-md shadow hover:bg-emerald-700 transition"
+          id="download-btn"
+        >
+          Download
+        </button>
+      </div>
+      <div class="mt-6 flex justify-center">
+        <button
+          class="bg-emerald-600 text-white px-6 py-2 rounded-md shadow hover:bg-emerald-700 transition"
+          id="downloadHistory-btn"
+        >
+          Show Download History
+        </button>
+      </div>
+    </div>
+  </body>
+  <script defer src="/js/downloadExp.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</html>

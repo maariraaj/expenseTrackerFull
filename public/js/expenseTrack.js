@@ -100,7 +100,7 @@ const addExpense = async (amount, description, category) => {
 async function deleteExpense(expenseId) {
     const token = localStorage.getItem('token');
     try {
-        const response = await axios.delete(`http://localhost:5000/expenses/${expenseId}`, {
+        const response = await axios.delete(`/expenses/${expenseId}`, {
             headers: { 'Authorization': token }
         });
         if (response.status === 200) {
@@ -175,7 +175,7 @@ const goToDownload = async () => {
         alert("You are not logged in. Please log in to access this page.");
         return;
     }
-    window.location.href = 'http://localhost:5000/expenses/downloadExp.html';
+    window.location.href = '/expenses/downloadExp.html';
 };
 
 const premiumStatusText = document.createElement("div");
@@ -240,7 +240,7 @@ premiumButton.onclick = async (e) => {
         },
         'modal': {
             'ondismiss': async function () {
-                await axios.post('http://localhost:5000/purchase/updateTransactionStatus',
+                await axios.post('/purchase/updateTransactionStatus',
                     {
                         order_id: options.order_id,
                         status: 'FAILED',

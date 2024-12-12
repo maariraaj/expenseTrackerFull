@@ -207,7 +207,7 @@ const checkPremiumStatus = async () => {
     const token = localStorage.getItem('token');
     try {
         const response = await axios.get('/purchase/orders', {
-            headers: { Authorization: token },
+            headers: { 'Authorization': token },
         });
         const orders = response.data.orders;
 
@@ -223,7 +223,7 @@ const checkPremiumStatus = async () => {
 premiumButton.onclick = async (e) => {
     const token = localStorage.getItem('token');
     const response = await axios.get('/purchase/premiumMembership', {
-        headers: { Authorization: token },
+        headers: { 'Authorization': token },
     });
     const options = {
         key: response.data.key_id,
@@ -234,7 +234,7 @@ premiumButton.onclick = async (e) => {
                 payment_id: response.razorpay_payment_id,
                 status: 'SUCCESSFUL',
             }, {
-                headers: { Authorization: token },
+                headers: { 'Authorization': token },
             });
             checkPremiumStatus();
         },

@@ -20,7 +20,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(express.static("views"));
 
 app.get("/", (req, res) => {
-    res.send("Welcome to the Expense Tracker");
+    res.sendFile(path.join(__dirname, "views", "auth", "logIn.html"));
 });
 
 app.use("/user", userRoutes);
@@ -42,7 +42,7 @@ sequelize
             .then(() => {
                 console.log("Database synced successfully");
                 app.listen(process.env.PORT, () => {
-                    console.log(`Server running on http://localhost:${process.env.PORT}`);
+                    console.log(`Server running`);
                 });
             });
     })

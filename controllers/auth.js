@@ -64,7 +64,7 @@ exports.postForgotPassword = async (req, res) => {
             userId: user.id,
             isActive: true,
         });
-        const resetUrl = `http://${process.env.DB_HOST}:5000/user/resetPassword/${resetRequest.id}`;
+        const resetUrl = `http://${process.env.HOST}:5000/user/resetPassword/${resetRequest.id}`;
         const tranEmailApi = new Brevo.TransactionalEmailsApi();
         const sendSmtpEmail = {
             to: [{ email }],

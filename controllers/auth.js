@@ -64,11 +64,11 @@ exports.postForgotPassword = async (req, res) => {
             userId: user.id,
             isActive: true,
         });
-        const resetUrl = `http://localhost:5000/user/resetPassword/${resetRequest.id}`;
+        const resetUrl = `http://${process.env.HOST}:5000/user/resetPassword/${resetRequest.id}`;
         const tranEmailApi = new Brevo.TransactionalEmailsApi();
         const sendSmtpEmail = {
             to: [{ email }],
-            sender: { email: "maariraajb@gmail.com", name: "Expense Tracker" },
+            sender: { email: "traderhustlerbmr@gmail.com", name: "Expense Tracker" },
             subject: "Reset Password Request",
             htmlContent: `<p>Hello,</p><p>Click the following link to reset your password:</p><a href="${resetUrl}">Reset Password</a>`,
         };

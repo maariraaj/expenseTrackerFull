@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const data = Object.fromEntries(formData);
 
         try {
-            const response = await axios.post("http://localhost:5000/user/logIn", data, {
+            const response = await axios.post("/user/logIn", data, {
                 headers: {
                     "Content-Type": "application/json",
                 },

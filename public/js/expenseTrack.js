@@ -100,7 +100,7 @@ const addExpense = async (amount, description, category) => {
 async function deleteExpense(expenseId) {
     const token = localStorage.getItem('token');
     try {
-        const response = await axios.delete(`http://localhost:5000/expenses/${expenseId}`, {
+        const response = await axios.delete(`/expenses/${expenseId}`, {
             headers: { 'Authorization': token }
         });
         if (response.status === 200) {
@@ -175,7 +175,7 @@ const goToDownload = async () => {
         alert("You are not logged in. Please log in to access this page.");
         return;
     }
-    window.location.href = 'http://localhost:5000/expenses/downloadExp.html';
+    window.location.href = '/expenses/downloadExp.html';
 };
 
 const premiumStatusText = document.createElement("div");
@@ -207,7 +207,7 @@ const checkPremiumStatus = async () => {
     const token = localStorage.getItem('token');
     try {
         const response = await axios.get('/purchase/orders', {
-            headers: { Authorization: token },
+            headers: { 'Authorization': token },
         });
         const orders = response.data.orders;
 
@@ -223,7 +223,7 @@ const checkPremiumStatus = async () => {
 premiumButton.onclick = async (e) => {
     const token = localStorage.getItem('token');
     const response = await axios.get('/purchase/premiumMembership', {
-        headers: { Authorization: token },
+        headers: { 'Authorization': token },
     });
     const options = {
         key: response.data.key_id,
@@ -234,13 +234,13 @@ premiumButton.onclick = async (e) => {
                 payment_id: response.razorpay_payment_id,
                 status: 'SUCCESSFUL',
             }, {
-                headers: { Authorization: token },
+                headers: { 'Authorization': token },
             });
             checkPremiumStatus();
         },
         'modal': {
             'ondismiss': async function () {
-                await axios.post('http://localhost:5000/purchase/updateTransactionStatus',
+                await axios.post('/purchase/updateTransactionStatus',
                     {
                         order_id: options.order_id,
                         status: 'FAILED',

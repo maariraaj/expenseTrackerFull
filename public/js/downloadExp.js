@@ -12,7 +12,6 @@ downloadButton.onclick = async (e) => {
             headers: { 'Authorization': token }
         });
         if (response.status === 200) {
-            console.log(response);
             const a = document.createElement('a');
             a.href = response.data.fileURL;
             a.download = 'myExpense.csv';
@@ -63,7 +62,7 @@ downloadHistoryButton.onclick = async (e) => {
         });
         if (response.data.success) {
             renderDownloadHistory(response.data.downloadHistory);
-            console.log(response.data)
+            //console.log(response.data)
         } else {
             alert("Failed to fetch download history.");
         }
